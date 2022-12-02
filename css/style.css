@@ -1,0 +1,15 @@
+/* 不要な空白の削除 */
+body {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  width: 100%;
+}
+
+/* navigation */
+nav {
+  display: flex;
+  margin: 0 auto;
+}
