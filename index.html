@@ -6,14 +6,17 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>MyProfile</title>
   <link rel="stylesheet" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap">
 </head>
 <body>
   <header>
     <nav>
       <div>
-        <a href="#index.html">MyProfile</a>
+        <a href="#index.html" class="home">MyProfile</a>
       </div>
-      <div>
+      <div class="menu">
         <a href="#about">About</a>
         <a href="#works">Works</a>
       </div>
@@ -39,17 +42,19 @@
       </section>
       <section>
         <h1 id="works">Works</h1>
-        <div>
-          <img src="" alt="">
-          <p></p>
-        </div>
-        <div>
-          <img src="" alt="">
-          <p></p>
-        </div>
-        <div>
-          <img src="" alt="">
-          <p></p>
+        <div class="works-container">
+          <div>
+            <img src="image/works1.png" alt="海">
+            <p>新潟に訪れた際に、日本海の雄大さに魅了されて撮影した1枚</p>
+          </div>
+          <div>
+            <img src="image/works2.png" alt="山">
+            <p>地元長野の木曽町から撮影した、冠雪した御嶽山</p>
+          </div>
+          <div>
+            <img src="image/works3.png" alt="町">
+            <p>京都で撮影した、明け方の古き良き日本の町並み</p>
+          </div>
         </div>
       </section>
     </article>
