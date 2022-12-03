@@ -24,24 +24,22 @@
         <a href="#index.html" class="home">MyProfile</a>
       </div>
       <div class="menu">
-        <a href="#about">About</a>
-        <a href="#works">Works</a>
+        <a href="#about" class="menu-item">About</a>
+        <a href="#works" class="menu-item">Works</a>
       </div>
     </nav>
   </header>
   <main>
     <article>
       <!-- メイン写真(カルーセル) -->
-      <section id="carousel-section">
         <div class="carousel">
             <img class="carouselImg" src="image/main1.png">
             <img class="carouselImg" src="image/main2.png">
             <img class="carouselImg" src="image/main3.png">
         </div>
-      </section>
 
       <!-- Aboutセクション -->
-      <section>
+      <section id="about-section">
         <h1 id="about">About</h1>
         <div class="about-container">
           <img src="image/about.png" alt="Kazuki_Asahina" class="portrait">
@@ -57,24 +55,34 @@
         </div>
       </section>
 
-      <section>
+      <section id="works-section">
         <h1 id="works">Works</h1>
         <div class="works-container">
           <div class="works-item">
-            <img src="image/works1.png" alt="海">
+            <a href=""><img src="image/works1.png" alt="海"></a>
             <p>新潟に訪れた際に、日本海の雄大さに魅了されて撮影した1枚</p>
           </div>
           <div class="works-item works-item-center">
-            <img src="image/works2.png" alt="山">
+            <a href=""><img src="image/works2.png" alt="山"></a>
             <p>地元長野の木曽町から撮影した、冠雪した御嶽山</p>
           </div>
           <div class="works-item">
-            <img src="image/works3.png" alt="町">
+            <a href=""><img src="image/works3.png" alt="町"></a>
             <p>京都で撮影した、明け方の古き良き日本の町並み</p>
           </div>
         </div>
       </section>
     </article>
+
+    <!-- TOPボタン -->
+    <a id="back-btn" href="#">TOP</a>
+
+    <!-- モーダルウインドウ -->
+    <div class="modal">
+      <img src="" alt="" class="big-img">
+      <a href="" class="close-btn">X</a>
+    </div>
+
   </main>
   <footer>
     <p>&copy My Profile. All rights reserved.</p>
