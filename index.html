@@ -6,9 +6,16 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>MyProfile</title>
   <link rel="stylesheet" href="css/style.css">
+
+  <!-- fontの読み込み -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap">
+
+  <!-- slickの読み込み -->
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css">
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+
 </head>
 <body>
   <header>
@@ -24,10 +31,14 @@
   </header>
   <main>
     <article>
-      <!-- メイン写真 -->
-      <div>
-        <img src="image/main.png" alt="canonのカメラ" class="mainpic">
-      </div>
+      <!-- メイン写真(カルーセル) -->
+      <section id="carousel-section">
+        <div class="carousel">
+            <img class="carouselImg" src="image/main1.png">
+            <img class="carouselImg" src="image/main2.png">
+            <img class="carouselImg" src="image/main3.png">
+        </div>
+      </section>
 
       <!-- Aboutセクション -->
       <section>
@@ -68,5 +79,13 @@
   <footer>
     <p>&copy My Profile. All rights reserved.</p>
   </footer>
+
+  <!-- jQueryの読み込み -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+  <!-- slickの読み込み -->
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+  <script src="js/script.js"></script>
 </body>
 </html>
