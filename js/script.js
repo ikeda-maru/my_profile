@@ -56,7 +56,7 @@ $( function () {
   });
 
   // worksセクションの画像をクリックしたら、モーダルウインドウ内で拡大表示
-  $('.works-section img').click(function() {
+  $('.works-container img').click(function() {
     const imgSrc = $(this).attr('src');
     $('.big-img').attr('src', imgSrc);
     $('.modal').fadeIn();
@@ -68,5 +68,4 @@ $( function () {
     $('.modal').fadeOut();
     return false
   });
-
 });
