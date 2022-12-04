@@ -1,17 +1,7 @@
 /* 不要な空白の削除 */
 body {
-  margin: 0;
   padding: 0;
-}
-
-/* はじめはセクションを非表示にしておく */
-section {
-  opacity: 0;
-  transition: 1s;
-}
-
-.fade-in {
-  opacity: 1;
+  margin: 0;
 }
 
 /* ナビゲーションメニュー */
@@ -19,11 +9,13 @@ nav {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  list-style-type: none;
   margin: 20px auto;
   max-width: 960px;
 }
 
 nav a {
+  width: 300px;
   font-weight: bold;
   text-decoration: none;
   font-size: 34px;
@@ -130,25 +122,51 @@ img {
   padding-left: 20px;
 }
 
-/* TOPボタン */
-#back-btn {
-  display: none;
-  padding: 28px 24px;
-  background-color: #000;
-  color: #fff;
-  text-decoration: none;
-  border-radius: 50%;
-  position: fixed;
-  bottom: 38px;
-  right: 20px;
-  font-family: "Noto Sans JP", sans-serif;
-}
-
 /* フッター */
 footer p {
   text-align: center;
   padding-bottom: 20px;
   font-family: "Noto Sans JP", sans-serif;
+}
+
+/* 横幅が767pxまでの場合 */
+@media (max-width: 767px) {
+  .works-item {
+    width: 100%;
+    text-align: center;
+    padding-bottom: 40px;
+  }
+}
+
+/* slick */
+.slider {
+  padding: 0;
+}
+
+
+/* TOPボタン */
+#back-btn {
+  position: fixed;
+  bottom: 38px;
+  right: 20px;
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+  text-decoration: none;
+  padding: 28px 24px;
+  border-radius: 50%;
+  font-family: "Noto Sans JP", sans-serif;
+  display: none;
+}
+
+/* はじめはセクションを非表示にしておく */
+section {
+  opacity: 0;
+  transition: 1s;
+}
+
+.fade-in {
+  opacity: 1;
 }
 
 /* モーダルウインドウ */
